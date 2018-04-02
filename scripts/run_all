@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+./scripts/line_count 
+./scripts/run_pig_script ./scripts/field_count.pig 
+./scripts/run_pig_script ./scripts/word_count.pig
+
+

@@ -1,0 +1,9 @@
+#!/usr/bin/env bash 
+
+# add a random number to the filename to ensure that
+# files with the same names coming in from different
+# folders do not overwrite each other.
+filename=${RANDOM}__$(basename $1)
+
+echo $1 $filename
+mv $1 ~/data_flat/$filename

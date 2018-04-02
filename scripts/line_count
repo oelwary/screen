@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+wc -l data_flat/* | tail -n1 | sed -e "s/^ *//; s/ .*$//" > /results_export/line_count.csv

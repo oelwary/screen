@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+container_id=$1
+sudo docker run -v ~/output:/results_export --rm -it ${container_id} /bin/bash

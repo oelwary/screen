@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
+/opt/pig/bin/pig -x local -f $1
