@@ -1,3 +1,11 @@
 #!/usr/bin/env bash
 container_id=$1
+
+# make and output directory
+mkdir -p ~/output
+
+# clean the output directory contents
+rm ~/output/*
+
+# Run the container mounting the output directory ito the container
 sudo docker run -v ~/output:/results_export --rm -it ${container_id} /bin/bash
